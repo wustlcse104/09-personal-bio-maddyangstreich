@@ -97,6 +97,10 @@ p {
   background-image: url('https://images.unsplash.com/photo-1436918898788-ebce04d38e46?auto=format&fit=crop&w=2251&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D');
 }
 
+.bg5::after {
+  background-image: url('https://images.unsplash.com/photo-1500856311637-fc0249e33e4c?auto=format&fit=crop&w=2250&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D');
+}
+
 .column {
     float: left;
     padding-right:50px;
