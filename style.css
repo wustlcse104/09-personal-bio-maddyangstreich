@@ -1,0 +1,185 @@
+body {
+  font-family: "Museo Slab"
+}
+.wrapper {
+  /* The height needs to be set to a fixed value for the effect to work.
+   * 100vh is the full height of the viewport. */
+  height: 100vh;
+  /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
+  overflow-x: hidden;
+  /* Enable scrolling on the page. */
+  overflow-y: auto;
+  /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
+  perspective: 2px;
+}
+
+.section {
+  /* Needed for children to be absolutely positioned relative to the parent. */
+  position: relative;
+  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+  height: 100vh;
+
+  /* For text formatting. */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+p {
+  font-family: "BALBOAPLUS";
+  font-weight: bold;
+  color: white;
+  font-size: 400px;
+  letter-spacing: 15px;
+
+}
+
+}
+.parallax1 {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+
+.parallax::after {
+  /* Display and position the pseudo-element */
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  /* Move the pseudo-element back away from the camera,
+   * then scale it back up to fill the viewport.
+   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+  transform: translateZ(-1px) scale(1.5);
+  /* Force the background image to fill the whole element. */
+  background-size: 100%;
+  /* Keep the image from overlapping sibling elements. */
+  z-index: -1;
+}
+
+
+/* The styling for the static div. */
+.static {
+  background: white;
+  height: 460px;
+}
+ .static3 {
+   background: white;
+   height: 100px;
+ }
+
+/* Sets the actual background images to adorable kitties. This part is crucial. */
+.bg1::after {
+  background-image: url('https://images.unsplash.com/photo-1484291470158-b8f8d608850d?auto=format&fit=crop&w=2250&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D');
+}
+
+.bg2 {
+  height: 850px;
+}
+
+.bg2::after {
+  background-image: url('https://images.unsplash.com/photo-1498075702571-ecb018f3752d?auto=format&fit=crop&w=2257&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D');
+}
+
+
+.bg3::after {
+  background-image: url('https://lh3.googleusercontent.com/proxy/EaO8Bbj0kxzSZ0lo_WJ8lN6dPCSWxa3nJaTUQvVqFRaRMMJPn8t7XOzCa7RKFBX82nk2z-IY_FT3BCvV5mFPMNjPkkeK-6edXgd5bMCv_bdPB-rCxAUhkDeFc9i70rucaAMn1Qz29i3kRjICjnL7hjEcy5-bvdx8zIoN3bFHU08O1xdcXHwwlROuLohid1iu8LJyEquQpWCoFqE2mu_IIAEz0Zw=s0-d');
+}
+
+.bg4::after {
+  background-image: url('https://images.unsplash.com/photo-1436918898788-ebce04d38e46?auto=format&fit=crop&w=2251&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D');
+}
+
+.column {
+    float: left;
+    padding-right:50px;
+    padding-left: 50px;
+}
+
+.static2 {
+  height: 200px;
+  background-color: white;
+}
+
+.static3{
+  height: 550px;
+}
+
+.row {
+  height: 600px;
+}
+
+
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #3785ad
+}
+
+h3{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+h4{
+  font-size: 17px;
+}
+
+#column-left {
+  float: left;
+  width: 500px;
+  margin-left: 00px;
+}
+
+#column-middle {
+  float: left;
+  width: 500px;
+}
+
+#column-right {
+  float: left;
+  width: 500px;
+}
+
+
+#column-left1 {
+    float: left;
+    width: 600px;
+    text-align: right;
+}
+
+
+
+#column-right1 {
+  float: left;
+  width: 600px;
+}
+
+.foodstuff{
+  font-weight: normal;
+  line-height: 36px;
+}
+
+.links {
+  font-weight: bold;
+}
+
+.table {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+th {
+  font-weight: bold;
+}
+
+
+.contact {
+}
